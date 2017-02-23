@@ -14,9 +14,9 @@ CDN：<https://cdnjs.com/libraries/ratchet>
 ## jQueryを使用
 
 Version：Latest(3.1.1)  
-<https://jquery.com/>
 定番やけん誰でも知っとろーもん。  
 自分で探さんね。  
+<https://jquery.com/>
 
 CDN：<https://code.jquery.com/>
 
@@ -37,7 +37,7 @@ CDN：<https://cdnjs.com/libraries/snap.js/>
 
 CDN：<https://cdnjs.com/libraries/animsition>
 
-**その他** 
+**その他**  
 それぞれの使い方はググってね！  
 ページトップへのボタンは自作。  
 他にも`/assets/css/common.css`と`/assets/js/common.js`でちょいちょい改造しとーけん。  
