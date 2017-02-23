@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ratchet template page</title>
+
+        <!-- Sets initial viewport load and disables zooming    -->
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+        <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <!-- Include the compiled Ratchet CSS -->
+        <link href="//cdnjs.cloudflare.com/ajax/libs/ratchet/2.0.2/css/ratchet.min.css" rel="stylesheet">
+        <link id="theme" href="" rel="stylesheet">
+        <!-- 
+        <link href="//cdnjs.cloudflare.com/ajax/libs/ratchet/2.0.2/css/ratchet-theme-android.min.css" rel="stylesheet">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/ratchet/2.0.2/css/ratchet-theme-ios.min.css" rel="stylesheet">
+         -->
+		<!-- Include the CSS plugins -->
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css">
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/snap.js/1.9.3/snap.min.css">
+		<link rel="stylesheet" href="/assets/css/common.css">
+    </head>
+    <body class="animsition">
+		<div id="content" class="snap-content">
+			<!-- Make sure all your bars are the first things in your <body> -->
+			<header class="bar bar-nav">
+				<a class="btn btn-link btn-nav pull-left animsition-link" href="javascript:history.back();" data-ignore="push">
+					<span class="icon icon-left-nav"></span>
+					Back
+				</a>
+				<a id="toggle-right" class="icon icon icon-more-vertical pull-right"></a>
+				<a href="#myPopover"><h1 class="title">Ratchet<span class="icon icon-caret"></span></h1></a>
+			</header>
+		
+			<div class="content">
+				<div class="segmented-control">
+					<a id="base" class="control-item active">Base</a>
+					<a id="ios" class="control-item">iOS</a>
+					<a id="android" class="control-item">Android</a>
+				</div>
+				
+				<h1>Ratchet</h1>
+				<p>
+					2ページ目<br />
+				</p>
+			</div>
+		</div>
+		
+		<div id="myModalexample" class="modal">
+			<header class="bar bar-nav">
+				<a class="icon icon-close pull-right" href="#myModalexample"></a>
+				<h1 class="title">Modal</h1>
+			</header>
+			<p class="content-padded">The contents of my modal go here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+		</div>
+
+		<!-- Popover -->
+		<div id="myPopover" class="popover">
+			<header class="bar bar-nav">
+				<h1 class="title">Popover title</h1>
+			</header>
+			<ul class="table-view">
+				<li class="table-view-cell">Item1</li>
+				<li class="table-view-cell">Item2</li>
+				<li class="table-view-cell">Item3</li>
+				<li class="table-view-cell">Item4</li>
+				<li class="table-view-cell">Item5</li>
+				<li class="table-view-cell">Item6</li>
+				<li class="table-view-cell">Item7</li>
+				<li class="table-view-cell">Item8</li>
+			</ul>
+		</div>
+    
+		<!-- Sidebar -->
+		<div class="snap-drawers">
+			<div class="snap-drawer snap-drawer-left" id="left-drawer">
+				<ul class="table-view">
+					<li class="table-view-divider">左メニュー</li>
+					<li class="table-view-cell">List item 1 <span class="chevron"></span></li>
+					<li class="table-view-cell">List item 2 <span class="chevron"></span></li>
+					<li class="table-view-cell">List item 3 <span class="chevron"></span></li>
+					<li class="table-view-cell">List item 4 <span class="chevron"></span></li>
+					<li class="table-view-cell">List item 5 <span class="chevron"></span></li>
+					<li class="table-view-cell">List item 6 <span class="chevron"></span></li>
+				</ul>
+			</div>
+			<div class="snap-drawer snap-drawer-right" id="right-drawer">
+				<ul class="table-view">
+					<li class="table-view-divider">右メニュー</li>
+					<li class="table-view-cell">List item 1 <span class="chevron"></span></li>
+					<li class="table-view-cell">List item 2 <span class="chevron"></span></li>
+					<li class="table-view-cell">List item 3 <span class="chevron"></span></li>
+					<li class="table-view-cell">List item 4 <span class="chevron"></span></li>
+					<li class="table-view-cell">List item 5 <span class="chevron"></span></li>
+					<li class="table-view-cell">List item 6 <span class="chevron"></span></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<nav class="bar bar-tab">
+			<a class="tab-item active" href="#">
+				<span class="icon icon-home"></span>
+				<span class="tab-label">Home</span>
+			</a>
+			<a class="tab-item" href="#">
+				<span class="icon icon-person"></span>
+				<span class="tab-label">Profile</span>
+			</a>
+			<a class="tab-item" href="#">
+				<span class="icon icon-star-filled"></span>
+				<span class="tab-label">Favorites</span>
+			</a>
+			<a class="tab-item" href="#">
+				<span class="icon icon-search"></span>
+				<span class="tab-label">Search</span>
+			</a>
+			<a class="tab-item" href="#">
+				<span class="icon icon-gear"></span>
+				<span class="tab-label">Settings</span>
+			</a>
+		</nav>
+		<div id="gotop">
+			<span class="icon icon-up-nav"></span>
+		</div>
+        <!-- Include the compiled Ratchet JS -->
+        <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ratchet/2.0.2/js/ratchet.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/snap.js/1.9.3/snap.min.js"></script>
+		<script src="/assets/js/common.js"></script>
+    </body>
+</html>
